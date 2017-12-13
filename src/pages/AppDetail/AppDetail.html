@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="AIS-green-sod">
+    <ion-title>AppDetail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+
+  
+
+   
+   <ion-card>
+    <!--<ion-icon [name]="selectedItem.icon" item-left></ion-icon>-->
+    <!--<img src="../../img/icon.png"/>-->
+    <img style="width:100px;height:100px;" src="assets/img/icon.png"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{selectedItem.title}}
+        </ion-card-title>
+      <p>
+       {{selectedItem.note}}
+      </p>
+
+      <p style="padding-top:10px;">
+       <button (click)='callAppLink()' color="AIS-green-sod" ion-button >Download</button>
+      </p>
+
+      <!--<a color="AIS-green-sod" href="https://emmobile.ais.co.th/Download/Android" clear item-right>Download</a>-->
+
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-scroll style="min-width: 100%;white-space: nowrap;height:220px"  scrollX="true">
+        <div class="card-background-page card-divcustom" *ngFor="let element of elementArray">
+          <!--<img src="assets/img/icon.png"/>-->
+          <ion-card>
+            <img src="assets/img/icon.png"/>
+            <div class="card-title">São Paulo</div>
+            <div class="card-subtitle">41 Listings</div>
+          </ion-card>
+        </div>
+  </ion-scroll>
+   
+    
+</ion-content>

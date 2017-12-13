@@ -1,0 +1,28 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content padding>
+
+  
+  <div id="pin">
+  <div class="dots">
+    <div *ngFor="let currentDot of dotArrysDisplay">
+         <div id={{currentDot}} class="dot"></div>
+      </div>
+  </div>
+
+  <p>Enter the password</p>
+
+  <div class="numbers">
+      <div *ngFor="let numberValueStr of numberArrysDisplay">
+         <div class="number" (tap)="itemTapped(numberValueStr,$event)">  {{numberValueStr}} </div>
+      </div>
+  </div>
+  </div>
+
+</ion-content>

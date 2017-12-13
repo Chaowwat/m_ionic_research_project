@@ -1,0 +1,101 @@
+<!--<ion-header>
+  <ion-navbar color="AIS-green-sod">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>GridLayout</ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content>
+
+    <ion-grid>
+  
+        <ion-row>
+            <ion-col class="col-margin-right ">
+               <img style="width:100%;height:100%;" src="assets/img/icon.png"/>
+            </ion-col>
+            <ion-col class="col-margin-right ">
+               <img style="width:100%;height:100%;" src="assets/img/icon.png"/>
+            </ion-col>
+             <ion-col class="col-margin-right">
+               <img style="width:100%;height:100%;" src="assets/img/icon.png"/>
+            </ion-col>
+        </ion-row>
+
+    
+        <ion-row>
+            <ion-col class="col-margin-right">
+                2 of 1
+            </ion-col>
+            <ion-col class="col-margin-right">
+                2 of 2
+            </ion-col>
+            <ion-col class="col-margin-right">
+                2 of 3 <br>#<br>#<br># <br>#<br>#<br>#
+            </ion-col>
+        </ion-row >
+        <ion-row>
+            <ion-col col-8 class="col-margin-right ">
+                3 of 1
+            </ion-col>
+            <ion-col class="col-margin-right ">
+                3 of 2 <br>#<br>#<br>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="col-margin-right ">
+            1 of 4
+            </ion-col>
+            <ion-col class="col-margin-right ">
+            2 of 4
+            </ion-col>
+            <ion-col col-auto class="col-margin-right ">
+            <ion-input placeholder="Variable width input"></ion-input>
+            </ion-col>
+            <ion-col class="col-margin-right ">
+            4 of 4
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="col-margin-right ">
+            1 of 3
+            </ion-col>
+            <ion-col col-auto class="col-margin-right ">
+            Variable width content
+            </ion-col>
+            <ion-col class="col-margin-right ">
+            3 of 3
+            </ion-col>
+        </ion-row>
+          <ion-row>
+            <ion-col class="col-margin-right">
+                <br>#<br>#<br># <br>#<br>#<br># <br>#<br>#<br># <br>#<br>#<br># <br>#<br>#<br># <br>#<br>#<br># <br>#<br>#<br># <br>#<br>#<br>#
+            </ion-col>
+        </ion-row >
+
+        <ion-row *ngFor="let rowElement of rowArray">
+            
+            <ion-col class="col-margin-right" (tap)="itemTapped(rowElement)">
+               {{rowElement}}
+            </ion-col>
+            <ion-col class="col-margin-right ">
+               <img style="width:100%;height:100%;" src="assets/img/icon.png"/>
+            </ion-col>
+            <ion-col class="col-margin-right ">
+               <img style="width:100%;height:100%;" src="assets/img/icon.png"/>
+            </ion-col>
+             <ion-col class="col-margin-right">
+               <img style="width:100%;height:100%;" src="assets/img/icon.png"/>
+            </ion-col>
+
+        </ion-row>
+
+
+    </ion-grid>
+
+
+
+</ion-content>

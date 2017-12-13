@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar color="AIS-green-sod">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>LocationCheck</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<h3>Ionic 2 LocationCheck</h3>-->
+  <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
+
+    <ion-card id="cardCheckin">
+
+        <ion-card-content>
+            <ion-card-title>
+                เข้างาน
+            </ion-card-title>
+
+            <!--<button (click)='checkinBtnLick()' ion-button icon-only large color="AIS-green-sod" >
+                <ion-icon name="pin"></ion-icon>
+            </button>-->
+
+            <img (click)='checkinBtnLick()'  src="assets/img/checkLocation.png"/>
+
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card id="cardCheckOut">
+
+        <ion-card-content>
+            <ion-card-title>
+                ออกงาน
+            </ion-card-title>
+
+            <!--<button (click)='checkoutBtnClick()' ion-button icon-only large color="AIS-green-sod" >
+                <ion-icon name="pin"></ion-icon>
+            </button>-->
+
+            <img (click)='checkoutBtnClick()'  src="assets/img/checkLocation.png"/>
+
+        </ion-card-content>
+    </ion-card>
+
+     <!--<ion-card id="cardGetCurrnt">
+        
+        <ion-card-content>
+
+            <ion-card-title>
+                ตำแหน่งปัจจุบัน
+            </ion-card-title>
+
+            <img (click)='getCurrentBtnClick()'  src="assets/img/currentLocation.png"/>
+
+        </ion-card-content>
+    </ion-card>-->
+
+    <!--<ion-card id="cardWatchCurrnt">
+        
+        <ion-card-content>
+
+            <ion-card-title>
+                watchCurrentLatLong
+            </ion-card-title>
+
+            <img (click)='watchcurrentLatLong()'  src="assets/img/currentLocation.png"/>
+
+        </ion-card-content>
+    </ion-card>-->
+
+    <!--currentLocation.png
+    checkLocation.png-->
+
+</ion-content>

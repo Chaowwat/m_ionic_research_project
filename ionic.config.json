@@ -1,0 +1,10 @@
+{
+  "name": "myAppIonicAngV2",
+  "app_id": "",
+  "defaultBrowser": "chrome",
+  "proxies": [],
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

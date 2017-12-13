@@ -1,0 +1,43 @@
+<!--<div>Logon Page html</div>-->
+
+<ion-header>
+    <ion-navbar color="AIS-green-sod">
+        <ion-title  text-center>
+            Login OTP
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+   
+
+     <ion-card>
+        <ion-card-content >
+
+            <form [formGroup]="loginOtpFormInput" (ngSubmit)="logOtpForm()">
+
+            <ion-item>
+                <ion-label>OTP</ion-label>
+                <ion-input type="text" formControlName="OTP"></ion-input>
+            </ion-item>
+
+
+
+            <div style="padding-top:10px;" text-center>
+                <button color="AIS-green-sod" ion-button type="submit" [disabled]="!loginOtpFormInput.valid">Submit</button>
+            </div>
+
+            </form>
+
+        </ion-card-content>
+    </ion-card>
+
+    <div>{{userValLogin}}</div>
+
+    
+    
+</ion-content>
+
+
+

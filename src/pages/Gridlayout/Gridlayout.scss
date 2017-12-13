@@ -1,0 +1,48 @@
+page-Gridlayout{
+
+    $colors-page-Gridlayout: (
+        primary:    #387ef5,
+        secondary:  #32db64,
+        danger:     #f53d3d,
+        light:      #f4f4f4,
+        dark:       #222,
+        AIS-green:#aec22b,
+        AIS-green-sod:#8dc63f,
+        AIS-brown:#58453f,
+        AIS-black:#231f20,
+        AIS-white:white,
+    );
+
+    // .row-style1 {
+    //     background-color: #8dc63f;
+    // }
+
+
+    // .row-style2 {
+    //     background-color: #387ef5;
+    // }
+
+
+    // .row-style3 {
+    //     background-color: #58453f;
+    // }
+
+    ion-col{
+        background-color: #8dc63f;
+        border: thin solid black;
+    }
+
+    .col-margin-right{
+        margin-right: 5px;
+    }
+    .col-padding-zero{
+        padding: 0px;
+    }
+
+    ion-row{
+        padding-bottom: 5px;
+    }
+
+
+}
+

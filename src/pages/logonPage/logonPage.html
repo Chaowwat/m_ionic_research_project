@@ -1,0 +1,44 @@
+<!--<div>Logon Page html</div>-->
+
+<ion-header>
+    <ion-navbar color="AIS-green-sod">
+        <ion-title  text-center>
+             Login
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+   
+
+     <ion-card>
+        <ion-card-content >
+
+            <form [formGroup]="loginFormInput" (ngSubmit)="logForm()">
+
+            <ion-item>
+                <ion-label>Username</ion-label>
+                <ion-input type="text" formControlName="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Password</ion-label>
+                <ion-input type="password" formControlName="password"></ion-input>
+            </ion-item>
+
+            <div style="padding-top:10px;" text-center>
+                <button color="AIS-green-sod" ion-button type="submit" [disabled]="!loginFormInput.valid">Submit</button>
+            </div>
+
+            </form>
+
+        </ion-card-content>
+    </ion-card>
+
+   
+    
+</ion-content>
+
+
+
